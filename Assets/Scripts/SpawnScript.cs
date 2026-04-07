@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Spawn_DoorHouse_Player : MonoBehaviour {
+public class SpawnScript : MonoBehaviour {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         if (PlayerPrefs.HasKey("LastExitID")) {

@@ -14,7 +14,7 @@ public class SceneChange : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")) { //jetbrains says "Explicit string comparison is inefficient, use CompareTag
+        if (other.CompareTag("Player")) { //jetbrains says "Explicit string comparison is inefficient, use CompareTag"
             PlayerPrefs.SetString("LastExitID", transitionID);
             SceneManager.LoadScene(sceneToLoad);
         }
